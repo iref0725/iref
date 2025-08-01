@@ -9,7 +9,7 @@ export default function TrainingMethodology() {
         
         {/* Text Section */}
         <div className="text-gray-800 space-y-6">
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight font-[roboto] text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight font-[roboto] text-red-700">
             Training <br /> Methodology
           </h2>
 

@@ -70,7 +70,7 @@ export default function PlacementsTable() {
       <div className="max-w-7xl mx-auto">
         {/* Headline Section */}
         <div className="mb-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-4">
    Employment Opportunities After the Course
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -81,7 +81,7 @@ Kickstart your career with roles in real estate, finance, investment advisory, a
         {/* Table */}
         <div className="overflow-x-auto bg-white shadow-md rounded-xl">
           <table className="min-w-full text-left border border-gray-300 text-sm md:text-base">
-            <thead className="bg-red-700 text-white">
+            <thead className="bg-orange-500 text-white">
               <tr>
                 <th className="py-3 px-4 border border-gray-300 font-semibold">
                   Employer

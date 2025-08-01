@@ -33,8 +33,8 @@ export default function StudentTestimonial() {
     <section className="bg-gray-100 py-16 px-6 md:px-16">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-2">
-          WHY STUDY IN IREF?
+        <h2 className="text-4xl md:text-5xl font-bold text-red-700 mb-2 uppercase">
+          Testimonials
         </h2>
         <h3 className="text-2xl font-semibold text-gray-700 mb-12">
           STUDENT SPEAKS

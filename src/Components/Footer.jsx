@@ -114,7 +114,7 @@ const Footer = () => {
           <span className="block md:inline">
             {" "}
             Designed & developed by{" "}
-            <a href="#" className="text-white hover:underline transition">
+            <a href="https://spadvertising.in" className="text-white hover:underline transition">
               SP Advertising
             </a>
           </span>

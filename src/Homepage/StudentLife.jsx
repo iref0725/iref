@@ -39,7 +39,7 @@ export default function StudentLife() {
           {/* Content Section */}
           <div className="w-full lg:w-1/2 space-y-4 md:space-y-6 text-gray-700 order-1 lg:order-2">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6 lg:mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-700 mb-4 md:mb-6 lg:mb-8">
                 STUDENT LIFE
               </h2>
               <h3 className="font-semibold text-base md:text-lg mb-2">

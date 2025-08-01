@@ -44,7 +44,7 @@ export default function Placements() {
 
         {/* Text Content */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-red-700 mb-6">
             Placement & Internship
           </h1>
           <p className="text-gray-700 text-lg leading-relaxed">

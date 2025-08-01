@@ -12,8 +12,8 @@ const ProgramStructureOverview = () => {
           className="object-cover rounded-xl"
         />
         </div>
-        <div className="max-w-3xl mx-auto px-6 bg-white shadow-md rounded-md">
-          <h2 className=" text-blue-950 text-4xl max-lg:text-3xl font-bold mb-4 uppercase">
+        <div className="max-w-3xl mx-auto px-6 bg-white rounded-md">
+          <h2 className=" text-red-700 text-4xl max-lg:text-3xl font-bold mb-4 uppercase">
             Program Structure Overview
           </h2>
 

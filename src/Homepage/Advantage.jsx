@@ -7,7 +7,7 @@ export default function Advantage() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
            {/* Right Image */}
         <div>
-          <h1 className="text-5xl font-bold text-gray-800 mb-10 font-[roboto]">
+          <h1 className="text-5xl font-bold text-red-700 mb-10 font-[roboto]">
             Institute of Real Estate and Finance Advantages
           </h1>
           {/* <p className="mb-4 text-lg text-gray-700">

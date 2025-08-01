@@ -27,7 +27,7 @@ export default function SimpleGallery() {
   return (
     <section className="bg-white py-12 px-4 md:px-16" id="campus">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold font-[roboto] text-center text-gray-800 mb-10">
+        <h2 className="text-4xl font-bold font-[roboto] text-center text-red-700 mb-10">
           Campus Life & Activities
         </h2>
 
