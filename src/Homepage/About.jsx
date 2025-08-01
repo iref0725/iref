@@ -43,7 +43,7 @@ export default function EducationAboutSection() {
                   />
                   <div
                     style={{ animationDuration: "20s" }}
-                    className="w-50 h-50 absolute top-0 left-0 animate-spin md:w-64 md:h-64 p-2 rounded-full border-2 border-gray-500 border-dashed"
+                    className="w-50 max-lg:w-48 h-50 max-lg:h-48 absolute top-0 left-0 animate-spin md:w-64 md:h-64 p-2 rounded-full border-2 border-gray-500 border-dashed"
                   ></div>
                 </div>
 
