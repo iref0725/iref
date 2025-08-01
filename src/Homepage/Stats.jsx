@@ -59,12 +59,12 @@ const StatCard = ({ icon: Icon, number, label, delay = 0 }) => {
       </div>
 
       {/* Number */}
-      <div className="text-xl md:text-2xl font-bold text-white mb-2 drop-shadow-lg">
+      <div className="text-xl md:text-2xl font-bold  mb-2 drop-shadow-lg">
         {isVisible ? <AnimatedCounter end={number} /> : "0"}
       </div>
 
       {/* Label */}
-      <div className="text-sm md:text-lg text-white/90 font-medium tracking-wide px-2 leading-tight">
+      <div className="text-sm md:text-lg text-gray-800 font-medium tracking-wide px-2 leading-tight">
         {label}
       </div>
 
@@ -76,9 +76,9 @@ const StatCard = ({ icon: Icon, number, label, delay = 0 }) => {
 
 export default function EducationStats() {
   return (
-    <div className="relative bg-gradient-to-br from-teal-400 via-teal-500 to-emerald-600 overflow-hidden">
+    <div className="relative bg-gradient-to-br from-teal-400/30 via-teal-500/30 to-emerald-600/30 overflow-hidden">
       {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center px-4 md:px-6 py-8 md:py-12">
+      <div className="relative z-10 flex items-center justify-center px-4 md:px-6 py-8 md:py-12 ">
         <div className="max-w-7xl mx-auto w-full">
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8">

@@ -7,7 +7,7 @@ const EnrollmentSection = () => {
   return (
     <section
       id="contact"
-      className="max-w-5xl mx-auto  bg-white text-gray-800 rounded-2xl shadow-2xl border border-gray-300 my-10 overflow-hidden flex flex-col lg:flex-row"
+      className="max-w-5xl mx-auto  bg-white text-gray-800 rounded-2xl shadow-2xl border border-gray-300 my-10 overflow-hidden flex flex-col-reverse lg:flex-row"
     >
       {/* Form Section */}
       <div className="w-full lg:w-1/2 bg-gray-100 p-8 space-y-6">

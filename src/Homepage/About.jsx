@@ -66,7 +66,7 @@ export default function EducationAboutSection() {
                 ABOUT US
               </div> */}
               <h2 className="text-4xl lg:text-5xl font-[roboto] font-bold text-red-700 leading-tight mb-3 md:mb-4">
-                Our Education System Inspires You More.
+             IREF - Institute of Real Estate and Finance 
               </h2>
 
               <p className="text-gray-600 leading-relaxed text-base">
