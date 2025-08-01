@@ -3,6 +3,7 @@ import logo from "../assets/components/navbar/logo.jpg";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -14,9 +15,7 @@ const Footer = () => {
             <img src={logo} alt="Eduka Logo" className="w-32" />
           </div>
           <p className="text-sm leading-relaxed">
-            To deploy quality education to students, professionals, and
-            entrepreneurs, and offer competitive human resources for the Real
-            Estate and allied industry sector.
+            IREF-GMS your global education platform for your career growth in the Real Estate, Construction, and Finance sector
           </p>
         </div>
 
@@ -82,7 +81,7 @@ const Footer = () => {
           <div className="flex items-start space-x-2">
             <FaMapMarkerAlt className="text-white mt-1" />
             <address className="not-italic text-sm">
-              5th Floor, Atharva Chambers, Wakdewadi, Shivajinagar, Pune 411005.
+              Anjaneya University & IREF, Raipur (C. G.)
             </address>
           </div>
           <div className="flex items-center space-x-2">
@@ -91,8 +90,21 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-2">
             <FiPhone className="text-white" />
-            <span>+91 7620563627</span>
+            <span>+91 9617893789, +91 8871090476</span>
           </div>
+        <div className="">
+  <h3 className="text-white text-xl font-semibold mb-4 border-b-2 border-white pb-2 inline-block">
+    Follow Us
+  </h3>
+  <div className="flex space-x-4">
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 text-2xl">
+      <FaFacebookF />
+    </a>
+    <a href="https://www.instagram.com/instituteofrealestaterpr/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-500 text-2xl">
+      <FaInstagram />
+    </a>
+  </div>
+</div>
         </div>
       </div>
       <div className="mt-8 border-t border-gray-700 pt-6">
