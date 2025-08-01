@@ -80,8 +80,8 @@ const EnrollmentSection = () => {
             type="submit"
             className="w-full bg-gradient-to-r from-red-700 to-red-800 text-white py-3 px-6 rounded-md hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
           >
-            <span className="font-semibold">Enroll</span>
-            <BsArrowRight className="text-lg" />
+            <span className="font-semibold">Enter</span>
+
           </button>
         </form>
       </div>

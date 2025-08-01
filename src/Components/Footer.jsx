@@ -46,32 +46,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Our Campus Section */}
-        <div>
-          <h3 className="text-white text-xl font-semibold mb-4 border-b-2 border-white pb-2 inline-block">
-            Our Campus
-          </h3>
-          <ul className="space-y-2">
-            {[
-              "Campus Safety",
-              "Student Activities",
-              "Academic Department",
-              "Planning & Administration",
-              "Office Of The Chancellor",
-              "Facility Services",
-            ].map((item, idx) => (
-              <li key={idx}>
-                <a
-                  href="#"
-                  className="group flex items-center hover:text-white transition-colors"
-                >
-                  <span className="text-red-700 mr-2 group-hover:text-white">•</span>{" "}
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+     
 
         {/* Address Section */}
         <div className="flex flex-col space-y-4">
@@ -92,8 +67,10 @@ const Footer = () => {
             <FiPhone className="text-white" />
             <span>+91 9617893789, +91 8871090476</span>
           </div>
-        <div className="">
-  <h3 className="text-white text-xl font-semibold mb-4 border-b-2 border-white pb-2 inline-block">
+       
+        </div>
+         <div className="w-full">
+  <h3 className="text-white text-xl font-semibold mb-4 border-b-2 w-full border-white pb-2 inline-block">
     Follow Us
   </h3>
   <div className="flex space-x-4">
@@ -105,7 +82,6 @@ const Footer = () => {
     </a>
   </div>
 </div>
-        </div>
       </div>
       <div className="mt-8 border-t border-gray-700 pt-6">
         <p className="text-center text-sm text-gray-400">
