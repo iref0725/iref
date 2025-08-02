@@ -110,7 +110,7 @@ const EnrollmentSection = () => {
               className="text-red-700 bg-red-500/20 p-3 rounded-lg"
               size={44}
             />
-            <span>contact@iref.com</span>
+            <span>pm.crownrealties@gmail.com</span>
           </div>
           <div className="flex items-center space-x-3">
             <FaMapMarkerAlt

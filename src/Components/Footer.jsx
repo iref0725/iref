@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-2">
             <MdEmail className="text-white" />
-            <span>contact@iref.com</span>
+            <span>pm.crownrealties@gmail.com</span>
           </div>
           <div className="flex items-center space-x-2">
             <FiPhone className="text-white" />
@@ -74,7 +74,7 @@ const Footer = () => {
     Follow Us
   </h3>
   <div className="flex space-x-4">
-    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 text-2xl">
+    <a href="https://www.facebook.com/IREFofficialraipur" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 text-2xl">
       <FaFacebookF />
     </a>
     <a href="https://www.instagram.com/instituteofrealestaterpr/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-500 text-2xl">
