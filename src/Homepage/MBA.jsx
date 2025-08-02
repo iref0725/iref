@@ -1,19 +1,15 @@
 import React from "react";
-import student from "../assets/mbaexecutive/student.jpg"
+import mba from "../assets/mba/mba.jpg";
 
-const ProgramStructureOverview = () => {
+const ProgramStructureOverview2 = () => {
   return (
-    <div className="flex  justify-center items-center my-10" id="program">
-      <div className="flex flex-row-reverse w-full gap-10 max-w-[1200px] justify-start max-lg:flex-col max-lg:gap-10">
+    <div className="flex justify-center items-center my-30" id="program">
+      <div className="flex  gap-10 w-full max-w-[1200px] justify-start max-lg:flex-col max-lg:gap-10">
         <div className="">
-          <img
-          src={student}
-          alt=""
-          className="object-cover rounded-xl"
-        />
+          <img src={mba} alt="" className="object-cover rounded-xl" />
         </div>
-        <div className="max-w-3xl mx-auto max-lg:pl-5 bg-white rounded-md">
-          <h2 className=" text-red-700 text-4xl max-lg:text-3xl font-bold mb-4 uppercase">
+        <div className="max-w-3xl max-lg:pl-5 mx-auto bg-white rounded-md">
+          <h2 className="text-red-700 text-4xl max-lg:text-3xl font-bold mb-4 uppercase">
             Program Structure Overview
           </h2>
 
@@ -21,14 +17,13 @@ const ProgramStructureOverview = () => {
             <div>
               <h3 className="font-bold text-2xl mb-2">Objective</h3>
               <p className="text-base">
-                To prepare world class Real Estate and Construction professional
-                for Global, Construction and Real Estate Market.
+                To prepare world class Real Estate and Constrcution professional for Global, Construction and Real Estate Market.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-y-2 gap-x-4 text-base">
               <span className="font-bold max-lg:text-lg text-gray-700">Duration:</span>
-              <span>1.5 Year</span>
+              <span>2 year</span>
 
               <span className="font-bold max-lg:text-lg text-gray-700">Intake:</span>
               <span>30 Students</span>
@@ -40,10 +35,7 @@ const ProgramStructureOverview = () => {
 
               <span className="font-bold max-lg:text-lg text-gray-700">Eligibility:</span>
               <span>
-                Working Professional with 2 Year Experience seeking admission
-                for the program must possess bachelor’s degree of any Statutory
-                University or any other recognized Foreign University with 45%
-                Marks
+                Any fresher seeking admission to the program must possess a bachelor's degree from any Statutory University or any other recognized Foreign University with 45% Marks
               </span>
 
               <span className="font-bold max-lg:text-lg text-gray-700">
@@ -54,10 +46,7 @@ const ProgramStructureOverview = () => {
               <span className="font-bold max-lg:text-lg text-gray-700">
                 Program Specialization:
               </span>
-              <span>
-                MBA – Real Estate, Construction and Finance Management (Anjaneya
-                University)
-              </span>
+              <span>MBA - Real Estate Management (Anjaneya University)</span>
 
               <span className="font-bold max-lg:text-lg text-gray-700">
                 Learning Mode:
@@ -66,26 +55,21 @@ const ProgramStructureOverview = () => {
 
               <span className="font-bold max-lg:text-lg text-gray-700">Assessment:</span>
               <span>
-                All courses will have 30% internal component and 70% external
-                component exam.
+                All courses will have 30% internal component and 70% external component exam.
               </span>
 
               <span className="font-bold max-lg:text-lg text-gray-700">
                 Standard of Passing:
               </span>
               <span>
-                Students securing more than or equal to 40% of absolute marks
-                for passing/subject.
+                Students securing more than or equal to 40% of absolute marks for passing/subject.
               </span>
 
               <span className="font-bold max-lg:text-lg text-gray-700">
                 Award of Certificate:
               </span>
               <span>
-                The certificate will be accredited by Anjaneya University, at
-                the end of last semester’s examination by considering the
-                performance of all semester examinations after obtaining a
-                minimum 40% aggregate out of 100%.
+                The certificate will be accredited by Anjaneya University, at the end of last semester's examination by considering the performance of all semester examinations after obtaining a minimum 40% aggregate out of 100%
               </span>
             </div>
           </div>
@@ -95,4 +79,4 @@ const ProgramStructureOverview = () => {
   );
 };
 
-export default ProgramStructureOverview;
+export default ProgramStructureOverview2;

@@ -39,7 +39,6 @@ const Navbar = () => {
     { name: "Placements", href: "#placements", id: "placements" },
     { name: "Employment", href: "#employment", id: "employment" },
     { name: "Campus", href: "#campus", id: "campus" },
-   
   ];
 
   return (
