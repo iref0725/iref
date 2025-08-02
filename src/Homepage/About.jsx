@@ -21,7 +21,8 @@ export default function EducationAboutSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="w-full h-20 md:h-28 bg-orange-500 flex justify-center items-center rounded-b-[20px] md:rounded-b-[30px] rounded-tl-[20px] md:rounded-tl-[30px] p-3 md:p-4 text-white shadow-xl z-30">
+                <div className="w-full h-20 md:h-28 bg-orange-500 flex justify-center items-center 
+                rounded-b-[20px] md:rounded-b-[30px] rounded-tl-[20px] md:rounded-tl-[30px] p-3 md:p-4 text-white shadow-xl z-30">
                   <div className="flex items-center gap-2 md:gap-3">
                     <div className="bg-white bg-opacity-20 rounded-full p-1.5 md:p-2">
                       <BookOpen className="w-4 h-4 md:w-6 md:h-6 text-black" />

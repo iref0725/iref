@@ -1,70 +1,95 @@
-import React from "react";
+import React from 'react';
 
+// Data for the testimonials
 const testimonials = [
   {
-    name: "Abisha Wachenuka",
-    image: "/images/abisha.jpg", // Replace with actual path
-    designation:
-      "Entrepreneur, Founder – Inspired Relentless Innovators Symposium (Pty) Ltd",
-    country: "Botswana",
-    message:
-      "I have taken several courses including Real Estate Professional and Real Estate Marketing and found the instructors to be professional and knowledgeable. The content was engaging and offered opportunities to apply my skills in real-world scenarios.",
+    name: 'Abhishek Taru',
+    quote: "IREF Institute has exceeded my expectations. The knowledgeable and engaging faculty, practical curriculum, and strong emphasis on real-world applications have significantly enriched my learning experience. The institute's supportive environment and modern facilities make it an ideal choice.",
+    stars: 5,
   },
   {
-    name: "Amit Sharma",
-    image: "/images/amit.jpg", // Replace with actual path
-    designation: "Business Development Executive, Shree Infra Realty",
-    country: "India",
-    message:
-      "The practical knowledge and industry connections I gained at IREF were beyond my expectations. The mentorship and case-based learning helped me land my first job within two months of completing the program.",
+    name: 'Bhushan Gaikwad',
+    quote: 'Attending IREF was a transformative experience. The dedicated faculty, diverse range of courses, and vibrant campus community provided an enriching environment for both academic and personal growth. The knowledge I gained will doubtless shape my future endeavors positively.',
+    stars: 5,
   },
   {
-    name: "Nokuthula Moyo",
-    image: "/images/nokuthula.jpg", // Replace with actual path
-    designation: "Real Estate Analyst, Urban Futures Group",
-    country: "Zimbabwe",
-    message:
-      "IREF gave me global exposure and technical know-how in real estate development and finance. I’m now confident working on complex feasibility reports and investment strategies with international teams.",
+    name: 'Akshada Agre',
+    quote: 'As a pharmacy student, it has been a great experience learning with the Institution of Real Estate, Construction, and Finance. It has enhanced my skills and provided a lot of great opportunities.',
+    stars: 5,
   },
 ];
 
-export default function StudentTestimonial() {
+// Star component for rating
+const StarRating = ({ count }) => {
   return (
-    <section className="bg-gray-100 py-16 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-bold text-red-700 mb-2 uppercase">
-          Testimonials
-        </h2>
-        <h3 className="text-2xl font-semibold text-gray-700 mb-12">
-          STUDENT SPEAKS
-        </h3>
+    <div className="flex items-center">
+      {[...Array(count)].map((_, i) => (
+        <svg
+          key={i}
+          className="h-5 w-5 text-yellow-400"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </div>
+  );
+};
+
+const Testimonials = () => {
+  return (
+    <section className="bg-slate-50 py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Hear From Our Students
+          </h2>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            Discover how our dedicated faculty and practical curriculum shape successful futures.
+          </p>
+        </div>
 
         {/* Testimonials Grid */}
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((student, index) => (
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {testimonials.map((testimonial) => (
             <div
-              key={index}
-              className="bg-white shadow-lg rounded-xl p-6 flex flex-col items-start text-left hover:shadow-xl transition-shadow duration-300"
+              key={testimonial.name}
+              className="flex flex-col rounded-2xl bg-white p-8 shadow-lg"
             >
-              <img
-                src={student.image}
-                alt={student.name}
-                className="w-24 h-24 rounded-lg object-cover border border-gray-300 mb-4"
-              />
-              <h4 className="text-lg font-semibold text-gray-800">{student.name}</h4>
-              <p className="text-sm text-gray-600 mt-1">
-                <strong>Designation:</strong> {student.designation}
-                <br />
-                <strong>Country:</strong> {student.country}
-              </p>
-              <p className="mt-4 text-gray-700 text-base leading-relaxed">
-                {student.message}
-              </p>
+              <div className="flex-grow">
+                <blockquote className="text-gray-700">
+                  <p>{`“${testimonial.quote}”`}</p>
+                </blockquote>
+              </div>
+              <footer className="mt-6">
+                <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                {testimonial.stars && (
+                  <div className="mt-2">
+                    <StarRating count={testimonial.stars} />
+                  </div>
+                )}
+              </footer>
             </div>
           ))}
         </div>
+
+        {/* Button */}
+        <div className="mt-16 text-center">
+          <a
+          href='https://www.google.com/search?q=irefglobal&sca_esv=bdc65ffe85f8e301&sxsrf=AE3TifPNIZ1rXDV-Ij6G2y8_ZgFXdK1BFg%3A1754117935750&ei=L7eNaLTHLZam2roPye328AU&ved=0ahUKEwj0mtHDxuuOAxUWk1YBHcm2HV4Q4dUDCBA&uact=5&oq=irefglobal&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmlyZWZnbG9iYWwyBxAAGIAEGA0yBxAAGIAEGA0yBhAAGA0YHjIGEAAYDRgeMgYQABgNGB4yCBAAGKIEGIkFSIMbUPMFWPgRcAF4AZABAJgBjQKgAaYKqgEFMC4yLjS4AQPIAQD4AQGYAgagAukKwgILEAAYgAQYkQIYigXCAgcQABiABBgKwgIFEAAY7wXCAgsQABiABBiGAxiKBcICCBAAGIAEGKIEmAMAiAYBkgcFMC4xLjWgB6UYsgcFMC4xLjW4B-kKwgcHMi0zLjIuMcgHPQ&sclient=gws-wiz-serp#'
+            type="button"
+            className="rounded-md bg-red-700 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+           
+          >
+            More Reviews
+          </a>
+        </div>
+        
       </div>
     </section>
   );
-}
+};
+
+export default Testimonials;

@@ -60,6 +60,13 @@ const PrevArrow = ({ onClick }) => (
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  
+    function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   const settings = {
     dots: true,
@@ -84,7 +91,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen w-full font-inter overflow-hidden" id="hero">
+    <section className="relative min-h-screen w-full pt-20 font-inter overflow-hidden" id="hero">
       <Slider {...settings} className="w-full h-screen">
         {slides.map((slide, index) => (
           <div key={slide.id}>
@@ -121,12 +128,13 @@ const Hero = () => {
               {slides[currentSlide].description}
             </p>
             <div className="flex gap-4 max-lg:text-base max-lg:justify-center">
-              <button className="bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-8 max-lg:px-4 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <button onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("about");
+              }} className="bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-8 max-lg:px-4 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1">
                 ABOUT MORE
               </button>
-              <button className="bg-transparent border-2 border-white  text-white font-semibold py-3 px-8 max-lg:px-4 rounded-full transition-all duration-300 transform hover:-translate-y-1">
-                LEARN MORE
-              </button>
+             
             </div>
           </div>
         </div>

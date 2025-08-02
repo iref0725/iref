@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ExternalLink } from "lucide-react";
 import logo from "../assets/components/navbar/logo.jpg";
+import { IoCall } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,8 +81,8 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection("contact");
               }} className="group bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-t-2xl rounded-br-2xl shadow-lg flex items-center space-x-2 transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-            <ExternalLink className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-            <span>APPLY NOW</span>
+            <IoCall className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+            <span>Contact Us</span>
           </button>
         </div>
 
@@ -123,7 +124,7 @@ const Navbar = () => {
           {/* Mobile Apply Button */}
           <div className="pt-4 border-t border-gray-200">
             <button className="w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-t-2xl rounded-br-2xl shadow-lg flex items-center justify-center space-x-2 transition-all duration-300">
-              <ExternalLink className="w-5 h-5" />
+              <IoCall className="w-5 h-5" />
               <span>APPLY NOW</span>
             </button>
           </div>
