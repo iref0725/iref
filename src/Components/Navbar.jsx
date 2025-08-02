@@ -39,7 +39,7 @@ const Navbar = () => {
     { name: "Placements", href: "#placements", id: "placements" },
     { name: "Employment", href: "#employment", id: "employment" },
     { name: "Campus", href: "#campus", id: "campus" },
-    { name: "Contact", href: "#contact", id: "contact" },
+   
   ];
 
   return (

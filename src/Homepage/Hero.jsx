@@ -115,13 +115,11 @@ const Hero = () => {
       <div className="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
         <div className=" z-10 flex flex-col w-full max-w-[1200px] items-center justify-center px-6 md:px-16 text-center md:text-left slide-content">
           <div className="w-full text-white">
-            <p className="text-orange-500 text-lg md:text-xl font-semibold mb-4 flex items-center justify-center md:justify-start">
-              <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-              </svg>
-              WELCOME TO IREF
-            </p>
-            <h1 className="text-5xl font-[roboto] md:text-6xl max-w-[900px] font-extrabold leading-tight mb-6">
+            <span className="text-white bg-red-700/40 text-lg md:text-xl font-semibold p-2 rounded-full px-6">
+             
+              WELCOME TO IREF RAIPUR
+            </span>
+            <h1 className="text-5xl mt-8 font-[roboto] md:text-6xl max-w-[900px] font-extrabold leading-tight mb-6">
               {slides[currentSlide].title}
             </h1>
             <p className="text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
